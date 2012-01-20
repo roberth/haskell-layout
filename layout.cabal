@@ -1,0 +1,15 @@
+Name:           layout
+Version:        0.0.0.0
+License:        BSD3
+Author:         Robert Hensing
+Synopsis:       Turn values into pretty text or markup
+Build-Type:     Simple
+Cabal-Version:  >= 1.2
+
+Library
+    Build-Depends:      base
+                        , convertible
+                        , hinduce-missingh >= 0.0.0.0
+    Exposed-Modules:    Text.Layout
+    Hs-Source-Dirs:     src
+    Extensions:	        MultiParamTypeClasses, FlexibleContexts
