@@ -14,7 +14,7 @@ import Data.Convertible
 
 newtype DisplayHtml = DisplayHtml String
 
-instance Convertible DDisplayHtml DisplayHtml where
+instance Convertible DisplayHtml DisplayHtml where
   safeConvert = Right
 
 {---- end TODO move to modules ----}
