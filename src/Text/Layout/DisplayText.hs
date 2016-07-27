@@ -75,9 +75,9 @@ instance (Layout a DisplayText,
 
 -- for x, x' of types a, b, or c, we assume show x == show x' <==> x == x'
 asciiTable :: --(Show a, Eq a, Show b, Eq b, Show c, Eq c)
-  ( Convertible a DisplayText
-  , Convertible b DisplayText
-  , Convertible c DisplayText ) => 
+  ( Layout a DisplayText
+  , Layout b DisplayText
+  , Layout c DisplayText ) =>
   String -> (String, String) -> [((a,b), c)] -> String
 asciiTable title (astr, bstr) table' = "Table: " ++ title ++ "\n"
                                   ++ thead ++ "\n" ++ tbody
